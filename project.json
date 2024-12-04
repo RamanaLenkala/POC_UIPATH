@@ -1,20 +1,19 @@
 {
-  "name": "Linkedin-Deleting connections",
-  "projectId": "17b9f6fc-db18-4eb5-ac56-2bcf4253b879",
-  "description": "Blank Process",
+  "name": "Synchro.EIA",
+  "projectId": "7c8b990e-7eb4-4864-84de-cc0ebaacf15e",
+  "description": "",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.23.3-preview]",
-    "UiPath.Mail.Activities": "[1.22.2]",
-    "UiPath.System.Activities": "[24.3.1]",
-    "UiPath.Testing.Activities": "[24.4.0-preview]",
-    "UiPath.UIAutomation.Activities": "[24.4.1-preview]"
+    "Synchro.Library": "[1.0.22]",
+    "UiPath.Excel.Activities": "[2.24.1]",
+    "UiPath.System.Activities": "[24.10.4]",
+    "UiPath.UIAutomation.Activities": "[24.10.3]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
-  "studioVersion": "24.4.0.0",
-  "projectVersion": "1.0.0",
+  "studioVersion": "24.10.5.0",
+  "projectVersion": "1.0.3",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -50,7 +49,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "4558bb20-8196-4fba-8789-30d8dbc1deb5",
+      "uniqueId": "df209dc2-f1fd-4599-93c4-f7ddb0b8a82f",
       "input": [],
       "output": []
     }

@@ -1,0 +1,151 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Activities.System.FileOperations</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Platform</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="1068,681.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="upr:ILocalResource" Name="NewFile" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: File Share Site - EIA Gov Data - All Documents" sap:VirtualizedContainerService.HintSize="484,658.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="e9b6f756-37ca-4845-905b-b6ade6103b58" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,418.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Temp" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="Get Text 'Copied 1'" sap:VirtualizedContainerService.HintSize="382.4,189.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="e9b6f756-37ca-4845-905b-b6ade6103b58" TextString="[Temp]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://synchrogisticscom.sharepoint.com/sites/FileShareSite/Shared%20Documents/Forms/AllItems.aspx?e=5%3Add76886084a14edfaf9234dad8c520b6&amp;sharingv2=true&amp;fromShare=true&amp;at=9&amp;OR=Teams%2DHL&amp;CT=1727774369871&amp;clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDA4MTcwMDQyMSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&amp;CID=8defcc74%2Dd15b%2D4c33%2D9544%2D84ea76c76267&amp;FolderCTID=0x01200070A5210FB49A3D45ADB7CC721CA270E2&amp;id=%2Fsites%2FFileShareSite%2FShared%20Documents%2FEIA%20Gov%20Data&amp;viewid=1e9ca3fe%2D0d51%2D4001%2D8c31%2D45ea36ce9c79" DesignTimeRectangle="1357, 376, 414, 173" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl aria-role='presentation' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' type='' tag='DIV' class='callout_1fa78941' aaname='' /&gt;" Guid="2a5744ac-4025-43ea-9a33-9f462c0aadad" InformativeScreenshot="4969c618c06b4d65aab023e22493e10a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='File Share Site - EIA Gov Data - All Documents' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="ca03a034-2d00-4e20-b509-2b1d4411cd89" CvElementArea="1372, 452, 59, 57" CvTextArea="1381, 472, 17, 20" CvType="Icon" DesignTimeRectangle="1372, 451, 60, 60" ElementType="Icon" FullSelectorArgument="&lt;webctrl class='ms-Image-image' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl class='ms-Image-image' tag='IMG' type='' aaname='' /&gt;" Guid="fdc83180-cb29-467e-9ae0-0fcc5f435b9f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAVjSURBVHhe7ZuPTxtlGMf9E9SpW2aMP2JEHTo3Y9xmNGGgGUynUTbNxE1d2DITiDNhiz8AGZPJEER+lG4DStlk0EHItmgzlR8b5bfZlrmABkx0mxuFtqGW9oAKj/e83N3u2tcC7V3twX2Tb67cc2/e9z73vM/7Nkdvg0UuDQB3XLTSAHDHRStZAExNTYHH44GxsTHF7fV6uV7lkSwAOtotoC/TQUlxkeJuqD8JDOPheg5dsgAo05WCbWSE+0s5VVZUgK60BI4fqwan08mdDU2yAMAn42bTU2khgJaWZjBUVhAIcmSC6gB0d3fBmMsFdbUnwFRXy9YFFxcNTqoEgGIYhmRBlaEyJAiqBYDCOoAQMBOCnQ6qBoDCTMDpEGxhVD0AFNaEYAvjggCACrYwLhgAqGAK44ICgJpvYVQVAGOVAbo6O7m//lvzKYyqAtDT0w16fRnJhNl85LCejKv+pIlrTZeqAKD6+/vINJiLLW1t5HtKIAUEMD09DQ6PE4b+tsHNAM4pzIXfh65SY7PZ6nKAd0rer7i88KHgwwmkgACaB3ohKvcNuDN9Pdz+WYwiXvr5S5Bo3AfuCYbrVT6FDOCZwm3UQSthQ89prlf5FDIA2kCV8pfNRq5X+aQqAAebqrhe5ZMGQAOgIIA9jfkwwe640DfsQ/BY7ma/azK+LxOuaf2txy8utuoA3J35IvRdHxRu0NB5ShKPztsCQ45hEnO6nBCj2yWJ+1oMoOjyd7C2YS+sqb/lVMtRYP6ZJPFxdt/wUX8tbOgpEJzQ+zUYrrWROC/Fp8ALJcngcDoECM8V7xBiX5wth3GPh5wvOV8Ld2XESdr6WgxgZd2H8OCxnRJH1XwAI8zMvt426YK1HQfgaUuWxDFduSTOS3EAS9JjwXThrADgsKWenH8i7y3h3MDNP/za0SwGoPvFDOsa9kkyILlFJ8mAT36tl2RAPOvyq+dInFdYiuBT+VthZNRGbtY2aoeHc16DE71mAUByXTa1na9VVwPETmk4BAyX7o0Xm9iiaCWfW9jCh7WC1sbXqgZwX/ZGshLgTfPz/i8brgyJ1OtpFgPIa6mGxw9thkfZ9rx3mLKB8Y6TOE6Fna06yRTBKaO7YiZxXmEDgM75oYLcOG9c9mYrfGKLATxwYJNfHL80WV12EsdiiEXRt1Bi8RQrbAAeOfg6WLklz+NxkyMufVgfaNfTLAZQcO5bWMEuo+IM2Hr8U0kGpLYdlWQALpu4fIoVNgD5TdUwzsykfqZZD3a2GOLnS3/2w/KseGobX6u2BsQfSSU3i/6pv5Ok/ZnLrcK5j88UU9v5WpUA7t0fT54yf7PbazLI+TVF7wrnro3cYK9L8Gvra8kUaKyAVSkvw8qUjYJ3l6YDM8FNAfaYtD8FViTFCH5yWxwUmspJnJfiANJOFbLL38yctwxeIIWKj33TWiNMi8ZLTXBP5q0YzWIAUbviYFnSsxLf/97zMMxOLZTVYYPlr66GJQnREj+0ZR2J81IUQGzZbuEp2512dhv8viQu3iDhS4pXyvdI4r4WAyg6bYTVqZskGbC9IE2SAcm5aZIMiH4nFr6q0ZM4L0UBmK9YBAANF38k22Jx/I709VB6vk64pu/6ACwNkAWqLYJyWQOgAYhAADiPaYNVwhEJYFXB29TBKmHjz9JtrBwKGUDzYC+7J3+TOmC5vCxrAyQa90bmmyF8NzjKuKjv9MQO5d3gsMsBk5H6bnCuwk6ws0iTBkADoAHQAGgANABhABCuH0zMVzimkP5Jaq7C/8jCjpB2JBnH1NHezo2SLlkA4I+m3G430H7k9H8ax4RjCyRZAKhZGgDuuGilAeCOi1QA/wKx5nUM8XokGgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382.4,168.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[Temp]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEUSURBVDhPY0AHzDkFBkC8H4j/I2EQ3wCqBDcAKQLi91BN6Bgkjt8QoIL7SBqw4ftQpQjA3Nz+Hoj/48VNbciGOEC1QgBWDVgwo6UNYQMmnjz9Hxkgy/F4+f6Xmr0Qhu8DcQCGASAAMgTETtq0BS4Owry+AcgGwHAAigEXXrwEG7Lw4qX/ypOnEWPAfRQDhLv7/zcePPz//fcfYAziEzDgP4oBIGfDDAEBo1nzSDMAZCsMHHjwEC4OwqKRcdgMQPUCPiydnPFffvEqdAPAgUgwIbE2toINUFy2FqYREY3oAKjQAaQYHWtOnfPf/NgF1ESEDQAVCQDxfSAGaUDGIDEBqDL8AKjQAIjPQzWCMIiNJScyMAAAIGu1wTJAuKMAAAAASUVORK5CYII=" InformativeScreenshot="c05e1b288ed71fcab8fe3224673ed880.jpg" Selector="&lt;html app='chrome.exe' htmlwindowname='{}' title='File Share Site - EIA Gov Data - All Documents' /&gt;" Title="File Share Site - EIA Gov Data - All Documents" Url="https://synchrogisticscom.sharepoint.com/sites/FileShareSite/Shared%20Documents/Forms/AllItems.aspx?e=5%3Add76886084a14edfaf9234dad8c520b6&amp;sharingv2=true&amp;fromShare=true&amp;at=9&amp;OR=Teams%2DHL&amp;CT=1727774369871&amp;clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDA4MTcwMDQyMSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&amp;CID=8defcc74%2Dd15b%2D4c33%2D9544%2D84ea76c76267&amp;FolderCTID=0x01200070A5210FB49A3D45ADB7CC721CA270E2&amp;id=%2Fsites%2FFileShareSite%2FShared%20Documents%2FEIA%20Gov%20Data&amp;viewid=1e9ca3fe%2D0d51%2D4001%2D8c31%2D45ea36ce9c79" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
